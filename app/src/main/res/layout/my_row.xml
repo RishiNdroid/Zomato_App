@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    android:background="@android:color/transparent"
+    app:cardElevation="8dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageview_photo_row"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="120dp" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewName_row"
+                    android:textSize="25sp"
+                    android:text="Name"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textview_locality_row"
+                    android:textSize="20sp"
+                    android:text="Locality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_address_row"
+                android:textSize="15sp"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="7"
+                android:text="Address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/image_over_flow"
+                android:layout_weight=".5"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rndroid.zomato_app.Home_Activity">
+    <FrameLayout
+        android:background="#FFF"
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>
